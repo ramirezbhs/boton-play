@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón Play</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #d3b37e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    svg {
+      width: 80px;
+      height: 80px;
+      fill: white;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="document.getElementById('miAudio').play()">
+    <svg viewBox="0 0 100 100">
+      <polygon points="30,20 80,50 30,80" />
+    </svg>
+  </button>
+
+  <audio id="miAudio" src="https://www.dropbox.com/scl/fi/8dz0fn6uqmrjmsbwsi9r4/SONORA-SANTANERA-NUESTRO-ANIVERSARIO.mp3?rlkey=31vxlwfnmje0l9d5dnt9popa3&st=g04zrog8&dl=0"></audio>
+</body>
+</html>
